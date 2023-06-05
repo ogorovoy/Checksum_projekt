@@ -2,7 +2,7 @@ import os
 import shutil
 import hashlib
 
-my_dir= "C:/Git/control_summe/"
+my_dir= "C:XXXX"
 
 def mask_funkction(my_dir):
     for file in os.listdir(my_dir):
