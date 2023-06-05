@@ -19,9 +19,9 @@ def mask_funkction(my_dir):
             txt_file_path = os.path.join(my_dir, create_new_folder, txt_file_name)
             with open(old_path, 'rb') as file:
                 file_content = file.read()
-                control_summe = hashlib.md5(file_content).hexdigest()
+                checksum = hashlib.md5(file_content).hexdigest()
 
             with open(txt_file_path, 'w') as txt_file:
-                txt_file.write(f"control_summe: {control_summe}")
+                txt_file.write(f"checksum: {checksum}")
 
 mask_funkction(my_dir)
